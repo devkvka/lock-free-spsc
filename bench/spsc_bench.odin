@@ -62,9 +62,25 @@ run :: proc(t: ^testing.T, $Size: uint) {
     testing.expect_value(t, bad, 0)
 }
 
+@(test) bench_1    :: proc(t: ^testing.T) { run(t, 1) }
+@(test) bench_2    :: proc(t: ^testing.T) { run(t, 2) }
+@(test) bench_4    :: proc(t: ^testing.T) { run(t, 4) }
+@(test) bench_8    :: proc(t: ^testing.T) { run(t, 8) }
 @(test) bench_16    :: proc(t: ^testing.T) { run(t, 16) }
 @(test) bench_32    :: proc(t: ^testing.T) { run(t, 32) }
 @(test) bench_64    :: proc(t: ^testing.T) { run(t, 64) }
+@(test) bench_128    :: proc(t: ^testing.T) { run(t, 128) }
+@(test) bench_256    :: proc(t: ^testing.T) { run(t, 256) }
+@(test) bench_512    :: proc(t: ^testing.T) { run(t, 512) }
 @(test) bench_1024  :: proc(t: ^testing.T) { run(t, 1024) }
+@(test) bench_2048  :: proc(t: ^testing.T) { run(t, 2048) }
+@(test) bench_4096  :: proc(t: ^testing.T) { run(t, 4096) }
+@(test) bench_8192  :: proc(t: ^testing.T) { run(t, 8192) }
+@(test) bench_16384  :: proc(t: ^testing.T) { run(t, 16384) }
+@(test) bench_32768  :: proc(t: ^testing.T) { run(t, 32768) }
 @(test) bench_65536 :: proc(t: ^testing.T) { run(t, 65536) }
 @(test) bench_131072 :: proc(t: ^testing.T) { run(t, 131072) }
+@(test) bench_262144 :: proc(t: ^testing.T) { run(t, 262144) }
+@(test) bench_524288 :: proc(t: ^testing.T) { run(t, 524288) }
+@(test) bench_1048576 :: proc(t: ^testing.T) { run(t, 1048576) }
+
