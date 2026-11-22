@@ -1,6 +1,6 @@
 # Lock free SPSC
 
-A generic lock-free SPSC queue implemented in (Odin)[https://odin-lang.org].
+A generic lock-free SPSC queue implemented in [Odin](https://odin-lang.org).
 The implementation used no AI, but tests and benchmarks were made by claude.
 I made this because I needed a lock-free queue for a project.
 I read some existing resources (mostly [rigtorp's writings](https://github.com/rigtorp/SPSCQueue)) 
